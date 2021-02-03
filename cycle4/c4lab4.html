@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function amstrong(){
+            var rev,temp;
+            var sum=0;
+            num=Number(document.getElementById("num").value)
+            temp=num;
+            while (num != 0){
+                rev = num % 10;
+                sum = sum +(rev*rev*rev);
+                num = Math.floor(num/10);
+            }
+         if (temp==sum){
+             document.getElementById("result").innerHTML="Number is Amstrong number"
+         }else{
+            document.getElementById("result").innerHTML="Number is not Amstrong number" 
+         }
+
+        }
+
+    </script>
+ 
+</head>
+<body>
+    Enter a 3 digit number <input type="text" id="num">
+    <button onclick="amstrong()">check</button>
+    <p id="result"></p>
+</body>
+</html>
