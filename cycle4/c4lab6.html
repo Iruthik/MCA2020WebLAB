@@ -1,0 +1,24 @@
+<html>
+    <head>
+     <script>
+         function Numbercheck() {
+             num=Number(document.getElementById("number").value)
+             if(num > 0){
+             document.getElementById("result").innerHTML = "Positive"
+             }
+             else if(num<0){
+                document.getElementById("result").innerHTML = "Negative"
+             }else{
+                document.getElementById("result").innerHTML = "Zero"
+             }
+         }
+
+     </script>
+    </head>
+    <body>
+        <h3>Check Number Positive or Negative</h3>
+        Enter Number: <input type="text"  id="number">
+        <button onclick = "Numbercheck() ">check</button>
+        <p id="result"></p>
+    </body>
+</html>
