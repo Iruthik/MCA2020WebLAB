@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            function multiple(){
+                num = Number(document.getElementById("number").value) 
+                if (num % 3 == 0 || num % 7 == 0){
+                    document.getElementById("result").innerHTML="Number is multiple of 3 or 7"
+                }
+                else{
+                    document.getElementById("result").innerHTML="Number is not multiple of 3 or 7"
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1>CHECKING NUMBER IS MULTIPLE OF 3 OR 7</h1>
+        Enter number: <input id ="number" type="text">
+        <button onclick = "multiple()" >Check</button>
+        <p id="result"></p>
+    </body>
+</html>
