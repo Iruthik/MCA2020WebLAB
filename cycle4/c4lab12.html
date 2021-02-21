@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <style>
+            #main{
+                width: 100%;
+                height: 100%;
+                background:#fff;
+               
+            }
+            .btn{
+                background-color: black;
+                 color:yellow; 
+            }
+            .heading{
+                padding-left: 474px;;
+
+            }
+            .h1{
+                margin-left: 217px;
+            }
+            #colo{
+                margin-left: 212px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id= "main">
+            <h1 class="h1">Enter color</h1> <input type="text" id = "colo">
+            <button class="btn" onclick="color()">click</button><br>
+            <h1 class="heading">Paragraph</h1>
+            <p id ="mainpara">Paragraphs are the building blocks of papers.
+                 Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences,
+                  a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among
+                   sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences 
+                   or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not
+                    determine whether a section in a paper is a paragraph. For instance, in some styles of writing, 
+                    particularly journalistic styles, a paragraph can be just one sentence long. Ultimately,
+                     a paragraph is a sentence or group of sentences that support one main idea. In this handout,
+                      we will refer to this as the “controlling idea,” because it controls what happens in the rest 
+                      of the paragraph.</p>
+        </div>
+        <script>
+        function color(){
+         var col = document.getElementById("colo").value;
+         document.getElementById("main").style.background = col;
+
+
+        }
+
+            
+        </script>
+    </body>
+</html>
